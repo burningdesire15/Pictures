@@ -1,0 +1,101 @@
+2014-01-31T05:55:45.092165+00:00 heroku[web.1]: State changed from up to starting
+2014-01-31T05:55:48.440611+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2014-01-31T05:55:49.063134+00:00 app[web.1]: 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:160:in `start'
+2014-01-31T05:55:49.063134+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/railties-3.2.8/lib/rails/commands.rb:55:in `block in <top (required)>'
+2014-01-31T05:55:49.063134+00:00 app[web.1]: [2014-01-31 05:55:49] FATAL SignalException: SIGTERM
+2014-01-31T05:55:49.063134+00:00 app[web.1]: 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:170:in `select'
+2014-01-31T05:55:49.063134+00:00 app[web.1]: 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:170:in `block in start'
+2014-01-31T05:55:49.063134+00:00 app[web.1]: 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:32:in `start'
+2014-01-31T05:55:49.063134+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/rack-1.4.5/lib/rack/server.rb:268:in `start'
+2014-01-31T05:55:49.063134+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/rack-1.4.5/lib/rack/handler/webrick.rb:13:in `run'
+2014-01-31T05:55:49.063410+00:00 app[web.1]: 	script/rails:6:in `require'
+2014-01-31T05:55:49.063410+00:00 app[web.1]: 	script/rails:6:in `<main>'
+2014-01-31T05:55:49.063410+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/railties-3.2.8/lib/rails/commands.rb:50:in `<top (required)>'
+2014-01-31T05:55:49.063134+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/railties-3.2.8/lib/rails/commands.rb:50:in `tap'
+2014-01-31T05:55:49.063975+00:00 app[web.1]: [2014-01-31 05:55:49] INFO  WEBrick::HTTPServer#start done.
+2014-01-31T05:55:49.063134+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/railties-3.2.8/lib/rails/commands/server.rb:70:in `start'
+2014-01-31T05:55:49.063410+00:00 app[web.1]: [2014-01-31 05:55:49] INFO  going to shutdown ...
+2014-01-31T05:55:49.093313+00:00 app[web.1]: => Booting WEBrick
+2014-01-31T05:55:49.093313+00:00 app[web.1]: => Call with -d to detach
+2014-01-31T05:55:49.093313+00:00 app[web.1]: => Ctrl-C to shutdown server
+2014-01-31T05:55:49.093313+00:00 app[web.1]: => Rails 3.2.8 application starting in production on http://0.0.0.0:9220
+2014-01-31T05:55:49.093313+00:00 app[web.1]: 
+2014-01-31T05:55:49.093313+00:00 app[web.1]: Started GET "/" for 202.164.55.103 at 2014-01-31 05:47:42 +0000
+2014-01-31T05:55:49.093313+00:00 app[web.1]: 
+2014-01-31T05:55:49.093313+00:00 app[web.1]:   Rendered picapp/welcome.html.erb within layouts/application (2.1ms)
+2014-01-31T05:55:49.093313+00:00 app[web.1]: Completed 200 OK in 194ms (Views: 164.6ms | ActiveRecord: 28.6ms)
+2014-01-31T05:55:49.093549+00:00 app[web.1]: 
+2014-01-31T05:55:49.093549+00:00 app[web.1]: 
+2014-01-31T05:55:49.093549+00:00 app[web.1]: 
+2014-01-31T05:55:49.093313+00:00 app[web.1]: Processing by PicappController#welcome as HTML
+2014-01-31T05:55:49.093549+00:00 app[web.1]: Served asset /5.jpg - 304 Not Modified (4ms)
+2014-01-31T05:55:49.093549+00:00 app[web.1]: 
+2014-01-31T05:55:49.093549+00:00 app[web.1]: Started GET "/assets/5.jpg" for 202.164.55.103 at 2014-01-31 05:47:43 +0000
+2014-01-31T05:55:49.093549+00:00 app[web.1]: Started GET "/users/new" for 202.164.55.103 at 2014-01-31 05:47:47 +0000
+2014-01-31T05:55:49.093549+00:00 app[web.1]:   Rendered users/_form.html.erb (2.9ms)
+2014-01-31T05:55:49.093549+00:00 app[web.1]:   Rendered users/new.html.erb within layouts/application (6.7ms)
+2014-01-31T05:55:49.093728+00:00 app[web.1]: Completed 200 OK in 21ms (Views: 12.0ms | ActiveRecord: 0.9ms)
+2014-01-31T05:55:49.093549+00:00 app[web.1]: Processing by UsersController#new as HTML
+2014-01-31T05:55:49.093728+00:00 app[web.1]: 
+2014-01-31T05:55:49.093728+00:00 app[web.1]: Started GET "/assets/5.jpg" for 202.164.55.103 at 2014-01-31 05:47:47 +0000
+2014-01-31T05:55:49.094366+00:00 app[web.1]: 
+2014-01-31T05:55:49.093728+00:00 app[web.1]: 
+2014-01-31T05:55:49.093728+00:00 app[web.1]: 
+2014-01-31T05:55:49.093728+00:00 app[web.1]: 
+2014-01-31T05:55:49.093728+00:00 app[web.1]: Started POST "/users" for 202.164.55.103 at 2014-01-31 05:48:07 +0000
+2014-01-31T05:55:49.094366+00:00 app[web.1]:   Rendered user_mailer/firstemail.text.erb (0.7ms)
+2014-01-31T05:55:49.094366+00:00 app[web.1]: Sent mail to akashbarik23@gmail.com (21ms)
+2014-01-31T05:55:49.093728+00:00 app[web.1]: Processing by UsersController#create as HTML
+2014-01-31T05:55:49.094366+00:00 app[web.1]: 
+2014-01-31T05:55:49.093728+00:00 app[web.1]:   Parameters: {"utf8"=>"✓", "authenticity_token"=>"9JRiJJzKwwkSdSQim/+Qd7fkRPG9yLMjmsB6aVC8srw=", "user"=>{"username"=>"akash", "email"=>"akashbarik23@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "image"=>#<ActionDispatch::Http::UploadedFile:0x007f4cc293e9a8 @original_filename="Batista-batista-23006720-768-1024.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[image]\"; filename=\"Batista-batista-23006720-768-1024.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<Tempfile:/tmp/RackMultipart20140131-2-1hvnv5w>>}}
+2014-01-31T05:55:49.093728+00:00 app[web.1]: Served asset /5.jpg - 304 Not Modified (0ms)
+2014-01-31T05:55:49.094366+00:00 app[web.1]: Completed 500 Internal Server Error in 1451ms
+2014-01-31T05:55:49.094602+00:00 app[web.1]: 
+2014-01-31T05:55:49.094366+00:00 app[web.1]:   app/controllers/users_controller.rb:55:in `block in create'
+2014-01-31T05:55:49.094366+00:00 app[web.1]:   app/models/user.rb:20:in `sendemail'
+2014-01-31T05:55:49.094366+00:00 app[web.1]: Errno::ECONNREFUSED (Connection refused - connect(2)):
+2014-01-31T05:55:49.094366+00:00 app[web.1]: 
+2014-01-31T05:55:49.094602+00:00 app[web.1]: Exiting
+2014-01-31T05:55:49.094366+00:00 app[web.1]:   app/controllers/users_controller.rb:54:in `create'
+2014-01-31T05:55:50.376526+00:00 heroku[web.1]: Process exited with status 143
+2014-01-31T05:55:51.888027+00:00 heroku[web.1]: Starting process with command `bundle exec rails server -p 25771`
+2014-01-31T05:55:54.303040+00:00 app[web.1]:         SECURITY WARNING: No secret option provided to Rack::Session::Cookie.
+2014-01-31T05:55:54.303040+00:00 app[web.1]:         provide a secret to prevent exploits that may be possible from crafted
+2014-01-31T05:55:54.303040+00:00 app[web.1]:         cookies. This will not be supported in future versions of Rack, and
+2014-01-31T05:55:54.303040+00:00 app[web.1]:         This poses a security threat. It is strongly recommended that you
+2014-01-31T05:55:54.303040+00:00 app[web.1]:         future versions will even invalidate your existing user cookies.
+2014-01-31T05:55:54.303040+00:00 app[web.1]:         Called from: /app/vendor/bundle/ruby/2.0.0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/session/abstract_store.rb:28:in `initialize'.
+2014-01-31T05:55:54.303040+00:00 app[web.1]: 
+2014-01-31T05:55:55.074286+00:00 app[web.1]: [2014-01-31 05:55:55] INFO  WEBrick 1.3.1
+2014-01-31T05:55:55.074286+00:00 app[web.1]: [2014-01-31 05:55:55] INFO  ruby 2.0.0 (2013-11-22) [x86_64-linux]
+2014-01-31T05:55:55.074640+00:00 app[web.1]: [2014-01-31 05:55:55] INFO  WEBrick::HTTPServer#start: pid=2 port=25771
+2014-01-31T05:55:55.674436+00:00 heroku[web.1]: State changed from starting to up
+2014-01-31T05:56:45.513031+00:00 heroku[router]: at=info method=GET path=/ host=pixome.herokuapp.com request_id=992a5769-a503-4ba2-b78a-2dda120b4e14 fwd="115.249.130.45" dyno=web.1 connect=2ms service=202ms status=200 bytes=2260
+2014-01-31T05:56:46.157806+00:00 heroku[router]: at=info method=GET path=/assets/5.jpg host=pixome.herokuapp.com request_id=cd1f6e3b-997f-43e6-b5f2-d63050a47354 fwd="115.249.130.45" dyno=web.1 connect=5ms service=76ms status=304 bytes=0
+2014-01-31T05:57:41.370965+00:00 heroku[api]: Starting process with command `bundle exec rake db:migrate` by akashbarik23@gmail.com
+2014-01-31T05:57:47.506176+00:00 heroku[run.5858]: Awaiting client
+2014-01-31T05:57:47.602151+00:00 heroku[run.5858]: State changed from starting to up
+2014-01-31T05:58:17.509448+00:00 heroku[run.5858]: Error R13 (Attach error) -> Failed to attach to process
+2014-01-31T05:58:19.047571+00:00 heroku[run.5858]: Process exited with status 128
+2014-01-31T05:58:19.065662+00:00 heroku[run.5858]: State changed from up to complete
+2014-01-31T05:59:24.187619+00:00 heroku[run.6367]: State changed from up to complete
+2014-01-31T05:59:41.714504+00:00 heroku[api]: Starting process with command `bundle exec rake db:migrate` by akashbarik23@gmail.com
+2014-01-31T05:59:50.304745+00:00 heroku[run.2708]: Awaiting client
+2014-01-31T05:59:55.747277+00:00 heroku[run.2708]: Starting process with command `bundle exec rake db:migrate`
+2014-01-31T06:00:00.992129+00:00 heroku[run.2708]: State changed from up to complete
+2014-01-31T06:00:00.979821+00:00 heroku[run.2708]: Process exited with status 0
+2014-01-31T06:00:22.020969+00:00 heroku[api]: Starting process with command `bundle exec rake db:migrate` by akashbarik23@gmail.com
+2014-01-31T06:00:28.121403+00:00 heroku[run.1141]: Awaiting client
+2014-01-31T06:00:28.194025+00:00 heroku[run.1141]: State changed from starting to up
+2014-01-31T05:59:00.302635+00:00 heroku[api]: Starting process with command `bundle exec rake db:migrate` by akashbarik23@gmail.com
+2014-01-31T06:00:58.123506+00:00 heroku[run.1141]: Error R13 (Attach error) -> Failed to attach to process
+2014-01-31T06:00:59.284015+00:00 heroku[run.1141]: Process exited with status 128
+2014-01-31T06:00:59.297341+00:00 heroku[run.1141]: State changed from up to complete
+2014-01-31T05:59:06.833713+00:00 heroku[run.6367]: Awaiting client
+2014-01-31T05:59:06.950413+00:00 heroku[run.6367]: State changed from starting to up
+2014-01-31T05:59:19.747267+00:00 heroku[run.6367]: Starting process with command `bundle exec rake db:migrate`
+2014-01-31T05:59:24.175614+00:00 heroku[run.6367]: Process exited with status 0
+2014-01-31T05:59:50.260725+00:00 heroku[run.2708]: State changed from starting to up
+2014-01-31T06:10:38.921271+00:00 heroku[router]: at=info method=GET path=/assets/5.jpg host=pixome.herokuapp.com request_id=eb38e896-d5cf-46f7-bb11-42025c775f88 fwd="115.249.130.45" dyno=web.1 connect=1ms service=11ms status=304 bytes=0
+2014-01-31T06:10:37.529090+00:00 heroku[router]: at=info method=GET path=/users/new host=pixome.herokuapp.com request_id=03880e6b-9e1b-4b82-9cf1-69feda74353c fwd="115.249.130.45" dyno=web.1 connect=1ms service=39ms status=200 bytes=3801
+2014-01-31T06:10:59.785343+00:00 app[web.1]: [deprecated] I18n.enforce_available_locales will default to true in the future. If you really want to skip validation of your locale you can set I18n.enforce_available_locales = false to avoid this message.

@@ -1,0 +1,40 @@
+
+#title{
+	font-size: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	width: 8em;
+	margin-top:2em;
+}
+#tips{
+	font-size: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	width: 18em;
+	margin-top:2.5em;
+
+}
+#buttonswrapper{
+	margin-top: 10em;
+	height: 10em;
+	margin-left: auto;
+	margin-right: auto;
+	background-color:red;
+}
+#buttonsbox{
+	margin-top: auto;
+	margin-left: auto;
+	margin-right: auto;
+	width: 33em;
+	height: 5em;
+	margin-top:3em;
+}
+a:link{
+	text-decoration: null;
+	}
+a:hover{
+background: rgba(12,12,12, 0.4);
+text-decoration: null;
+};

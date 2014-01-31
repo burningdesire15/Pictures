@@ -1,0 +1,64 @@
+<div style="height:210px; width:100%; margin-top:-1%;">
+
+<div style="height:100%; width:40%; float:right;">
+<%= form_for(@user) do |f| %>
+  <% if @user.errors.any? %>
+    
+      <h4 style="margin-top:-9%; color:red;"><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h4>
+
+      <ul>
+      <% @user.errors.full_messages.each do |msg| %>
+        <li style="margin:1% 0 1% 0; font-size:16px; color:red;"><%= msg %></li>
+      <% end %>
+      </ul>
+    
+  <% end %>
+
+
+</div>
+
+
+
+
+  <div style="height:100%; width:60%; float:right;padding-right:-10%; font-size:18px;" >
+        <div style="margin-left:48%; padding:1px;" >
+           <input id="user_username" name="user[username]" value="<%=@user.username%>" class="rounded" placeholder="username" size="30" type="text" style="border:none;" />
+      </div>
+      <div style="margin-left:48%;  padding:1px; border:none;" >
+        <input id="user_email" name="user[email]" value="<%=@user.email%>" class="rounded" placeholder="email" size="30" type="text" style="border:none;"/>
+      </div>
+      <div style="margin-left:48%;  padding:1px; border:none;">
+        <input id="user_password" name="user[password]" placeholder="password" size="30" type="password" style="border:none;" />
+      </div>
+        <div style="margin-left:48%;  padding:1px; border:none;" >
+        <input id="user_password_confirmation" name="user[password_confirmation]" class="rounded" placeholder="confirm password" size="30" type="password" style="border:none;"/>
+      </div>
+        <div class="thumb">
+      </div>
+
+  <div style="margin-left:51.8%;font-size:18px; background-color:rgba(255,255,255,0.7); border-radius:5%; margin:1% 0 1% 48% ; width:12%; display:block; text-align:center;">
+    Avatar
+  </div>
+    <div  style="margin-left:48%; clear:both; border:none; font-size:15px;">
+      <%= f.file_field :image %>
+    </div>
+  <div  style="margin-left:60%; margin-top:1%; clear:both; border:none;">
+  <button class="action blue" style=" background-color:rgba(80,80,150,1); border:none; border-radius:5%;" >
+    <span class="label" >Save</span>
+  </button>
+</div>
+      
+
+
+  </div>
+  <% end %>
+</div>
+
+
+
+
+
+
+
+
+
