@@ -21,7 +21,6 @@ Pictures::Application.configure do
      :authentication => :plain,
      :address => "smtp.gmail.com",
      :port => 587,
-     :domain => "mail.google.com",
      :user_name => "rubyventurepact@gmail.com",
      :password => "timexwr30m"
 }
