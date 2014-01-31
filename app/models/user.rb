@@ -9,7 +9,7 @@ class User < ActiveRecord::Base
 
 
   before_validation :convert_email
-  #after_save :sendemail
+  after_save :sendemail
 
   validates :email, uniqueness: true, presence: true
   validates :email, email_format: {message: "It seems this is not an email address"}
