@@ -14,17 +14,17 @@ Pictures::Application.configure do
   config.action_controller.perform_caching = false
 
   # Don't care if the mailer can't send
-  #config.action_mailer.raise_delivery_errors = true
-  #config.action_mailer.delivery_method = :smtp
-  #config.action_mailer.perform_deliveries = true
-  #config.action_mailer.smtp_settings = {
-  #   :authentication => :login,
-  #   :address => "smtp.gmail.com",
-  #   :port => 587,
-  #   :domain => "mail.google.com",
-  #   :user_name => "rubyventurepact@gmail.com",
-  #   :password => "timexwr30m"
-#}
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.smtp_settings = {
+     :authentication => :login,
+     :address => "smtp.gmail.com",
+     :port => 587,
+     :domain => "mail.google.com",
+     :user_name => "rubyventurepact@gmail.com",
+     :password => "timexwr30m"
+}
 
 
 
