@@ -3,6 +3,6 @@ class UserMailer < ActionMailer::Base
 
  
   def firstemail(email)
-  		#mail(:to => email, :subject => "Welcome to Pictures" )
+  		mail(:to => email, :subject => "Welcome to Pictures" )
   end
 end
