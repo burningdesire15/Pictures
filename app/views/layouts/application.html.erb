@@ -9,10 +9,8 @@
 
 </head>
 
-<body style="background-image:url(/assets/5.jpg); background-repeat:no-repeat; overflow:hidden; ">
-
-
-    <% if User.find_by_id(session[:user_id]) != nil %>
+<body style=" ">
+<div style="height:2000px; width:2000px; background-image:url(/assets/5.jpg); background-repeat:no-repeat; overflow:hidden;">    <% if User.find_by_id(session[:user_id]) != nil %>
         <div class="px_user">
                 <div class="px_header">
                     <div class="px_header_logo">
@@ -98,5 +96,6 @@
 
     </div>
 </div> <!-- div for px_user ends-->
+</div>
 </body>
 </html>
